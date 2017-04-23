@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3A95D955-932E-444C-97A8-55C30F89B4C4}</ProjectGuid>
+    <ProjectGuid>{41EDD826-3808-4384-ADBE-0EB813B08EAC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Patterns</RootNamespace>
-    <AssemblyName>Patterns</AssemblyName>
+    <RootNamespace>StrategyPattern</RootNamespace>
+    <AssemblyName>StrategyPattern</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\LogEntry.cs" />
+    <Compile Include="Comparers\ByEmployeeIdComparer.cs" />
+    <Compile Include="Factories\ComparerFactory.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StrategyViaDelegate\LogProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
